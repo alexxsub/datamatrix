@@ -1,0 +1,18 @@
+{
+  "name": "datamatrix",
+  "version": "1.0.0",
+  "description": "Datamatrix encode example",
+  "autor":"Alexx Sub",
+  "homepage":"https://github.com/alexxsub/datamatrix.git",
+  "main": "test.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zxing/library": "^0.19.1",
+    "jpeg-js": "^0.4.4"
+  }
+}
