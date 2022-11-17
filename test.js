@@ -19,8 +19,6 @@ const formats = [BarcodeFormat.QR_CODE, BarcodeFormat.DATA_MATRIX];
 hints.set(DecodeHintType.POSSIBLE_FORMATS, formats);
 hints.set(DecodeHintType.TRY_HARDER, true);
 
-
-
 const reader = new MultiFormatReader();
 
 reader.setHints(hints);
@@ -34,13 +32,9 @@ const len = rawImageData.width * rawImageData.height;
   }
   
 const luminanceSource = new RGBLuminanceSource(luminancesUint8Array, rawImageData.width, rawImageData.height);
-  
-
-  
-  const binaryBitmap = new BinaryBitmap(new HybridBinarizer(luminanceSource));
-  
-  
-  const qrCode = reader.decode(binaryBitmap);
-  
-  console.log( JSON.stringify(qrCode.text));
+ 
+const binaryBitmap = new BinaryBitmap(new HybridBinarizer(luminanceSource));
+const decodedCode = reader.decode(binaryBitmap);
+ 
+console.log( JSON.stringify(Code.text));
 
