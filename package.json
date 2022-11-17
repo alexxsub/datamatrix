@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Datamatrix encode example",
   "autor":"Alexx Sub",
-  "homepage":"https://github.com/alexxsub/datamatrix.git",
   "main": "test.js",
   "type": "module",
   "scripts": {
