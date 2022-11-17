@@ -36,5 +36,5 @@ const luminanceSource = new RGBLuminanceSource(luminancesUint8Array, rawImageDat
 const binaryBitmap = new BinaryBitmap(new HybridBinarizer(luminanceSource));
 const decodedCode = reader.decode(binaryBitmap);
  
-console.log( JSON.stringify(Code.text));
+console.log( JSON.stringify(decodedCode.text));
 
